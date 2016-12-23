@@ -1,0 +1,32 @@
+@charset "utf-8";
+*{word-wrap:break-word}
+:focus{outline:0}
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{margin:0;padding:0}
+
+html,body{*position:static; min-height:100%;}
+html{font-family: sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+
+
+body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino Sans GB","黑体","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";font-size:12px;color: #333;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased}
+/*body{line-height:1.6}*/
+
+a,area{outline:none;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;cursor: pointer}
+a:hover{text-decoration:underline;outline:none}
+a.ie6:hover{zoom:1}
+a:hover,a:active,a:focus{outline:none}
+
+/*img*/
+.bannner img,.image01 img,.image02 img,.image03 img,.image04 img,.zltexbox img,.uparro img{border:0;vertical-align:middle;width:100%}
+a img,img{-ms-interpolation-mode:bicubic}
+
+/*IE下a:hover 背景闪烁*/
+html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this))}
+
+
+.image04 { position:relative;}
+.image04 .appandroid{position:absolute;top:0%;left:14%; display:block;height:40%;width:32%;}
+.image04 .appios{position:absolute;top:0%;left:54%; display:block;height:40%;width:32%;}
+.box{display:none;width:215px;height:212px; position:absolute; z-index:99;}
+.uparro{ position:absolute;top:0;right:0; display:none; }
+.gray{ background-color:rgba(0,0,0,0.5); top:0; left:0; display:none; position:absolute; width:100%;height:100%;}

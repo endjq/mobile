@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>app</title>
+<style type="text/css"></style>
+<script src="js/jquery.js"></script>
+</head>
+<body>
+<div class="bannner">
+        <img src="images/1.jpg">
+        
+</div>
+<div class="image01">
+        <img src="images/2.jpg">
+</div>
+<div class="image02">
+        <img src="images/3.jpg">
+</div>
+<div class="image03">
+  <img src="images/4.jpg">
+</div>
+<div class="image04">
+  <img src="images/5.5.jpg">
+  <a href="" class="appandroid"></a>
+  <span class="appioss"><a href="javascript:void(0);" class="appios"></a></span>
+</div>
+<div class="box"><img src="images/sfar_03.png"></div>
+<div class="uparro"><img src="images/arrow_05.png"></div>
+<div class="gray"></div>
+<script>
+$(".appioss").click(function(){
+	$(".box").show();
+	$(".uparro").show();
+	$(".gray").show();
+	tc_center();
+});
+$(".box").click(function(){
+	
+	$(".box").hide();
+	$(".uparro").hide();
+	$(".gray").hide();
+});
+$(window).resize(function(){	
+    tc_center();
+});
+function tc_center(){
+	var _top=($(window).height()-$(".box").height())/2;
+	var _left=($(window).width()-$(".box").width())/2;
+	$(".box").css({top:_top,left:_left});
+}
+</script>
+
+</body>
+</html>
